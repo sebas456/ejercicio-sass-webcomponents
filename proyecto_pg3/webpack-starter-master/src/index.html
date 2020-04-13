@@ -9,37 +9,46 @@
 </head>
 <body>
   <div class="cabecera">
-    <img src="logo.jpg" width="100px" height="70px">
-    <label id="padre" for> juegos </label>
-    <select name="juegos" onchange="juegos(this.value);">
-    	<option value="1">Todos los juegos</option>
-    	<option value="2">PS4</option>
-    	<option value="3">PS VR</option>
-    	<option value="4">PS plus</option>
-    	<option value="5">Comprar juegos</option>
-    </select>
-    <label id="padre" for> hardware </label>
-    <select name="hardware" onchange="hardware(this.value);">
-    	<option value="1">PS4</option>
-    	<option value="2">PS4 pro</option>
-    	<option value="3">PS VR</option>
-    	<option value="4">Accesorios</option>
-    </select>
-    <label id="padre" for> servicios </label>
-    <select name="servicios" onchange="servicios(this.value);">
-    	<option value="1">PS plus</option>
-    	<option value="2">PS music</option>
-    </select>
-    <label id="padre" for> noticias </label>
-    <select name="noticias" onchange="noticias(this.value);">
-    	<option value="1">PS blogs</option>
-    </select>
-    <label id="padre" for> tienda </label>
-    <select name="tienda" onchange="tienda(this.value);">
-    	<option value="1">PS store</option>
-    </select>
+  <img src="logo.jpg" width="100px" height="70px">
+      <ul class="nav">
+        <li>Juegos
+          <ul>
+            <li>Todos los juegos</li>
+            <li>PS4</li>
+            <li>Ps VR</li>
+            <li>Ps plus</li>
+            <li>Comprar juegos</li>
+          </ul>
+        </li>
+        <li>Hardware
+          <ul>
+            <li>PS4</li>
+            <li>Ps4 Pro</li>
+            <li>Ps VR</li>
+            <li>Accesorios</li>
+          </ul>
+        </li>
+        <li>Servicios
+          <ul>
+            <li>PS Plus</li>
+            <li>Ps4 Music</li>
+          </ul>
+        </li>
+        <li>Noticias
+          <ul>
+            <li>PS Blog</li>
+          </ul>
+        </li>
+        <li>Ayuda
+          <ul>
+            <li>Ayuda y servicio tencnico</li>
+            <li>Estado de PSN</li>
+          </ul>
+        </li>
+      </ul>
+    
 
-    <button class="sesion">Iniciar sesion</button>
+  <button class="sesion">Iniciar sesion </button>
 
   </div>
 <img src="control.jpg">
@@ -82,8 +91,50 @@
 
 
 
+
+
   
 <style>
+
+#cabecera{
+     margin: auto;
+     
+  
+}
+
+ul, ol{
+  list-style: none;
+}
+.nav{
+  display: inline-block;
+}
+
+.nav li {
+  background-color: transparent;
+  color: #1F1F1F;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  
+}
+
+.nav > li{
+  float: left;
+}
+.nav li:hover{
+  background-color: gray;
+}
+
+.nav li ul{
+  display:none ;
+  position: absolute;
+  min-width: 140px;
+
+}
+.nav li:hover > ul {
+  display: block;
+}
+
 .papert{
   color: #363636;
     line-height: 1rem;
@@ -93,6 +144,8 @@
   border: 18px solid white;
   
 }
+
+
 .imgjuegos{
   
   display: inline;
@@ -121,6 +174,13 @@
   align-content: center;
 
 }
+
+.sesion{
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  align-content: right 100px;
+  display: inline-block;
 
 </style>
 
