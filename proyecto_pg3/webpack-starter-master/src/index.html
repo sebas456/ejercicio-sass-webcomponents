@@ -3,10 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
+  <link rel="stylesheet" href="index.scss">
+  <title>ps games - playstation</title>
+
 </head>
 <body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
+  <div class="cabecera">
+    <img src="logo.jpg" width="100px" height="70px">
+    <label id="padre" for> juegos </label>
+    <select name="juegos" onchange="juegos(this.value);">
+    	<option value="1">Todos los juegos</option>
+    	<option value="2">PS4</option>
+    	<option value="3">PS VR</option>
+    	<option value="4">PS plus</option>
+    	<option value="5">Comprar juegos</option>
+    </select>
+    <label id="padre" for> hardware </label>
+    <select name="hardware" onchange="hardware(this.value);">
+    	<option value="1">PS4</option>
+    	<option value="2">PS4 pro</option>
+    	<option value="3">PS VR</option>
+    	<option value="4">Accesorios</option>
+    </select>
+    <label id="padre" for> servicios </label>
+    <select name="servicios" onchange="servicios(this.value);">
+    	<option value="1">PS plus</option>
+    	<option value="2">PS music</option>
+    </select>
+    <label id="padre" for> noticias </label>
+    <select name="noticias" onchange="noticias(this.value);">
+    	<option value="1">PS blogs</option>
+    </select>
+    <label id="padre" for> tienda </label>
+    <select name="tienda" onchange="tienda(this.value);">
+    	<option value="1">PS store</option>
+    </select>
+
+    <button class="sesion">Iniciar sesion</button>
+
+  </div>
+<img src="control.jpg">
+
+<img src="destacado.jpg" >
+
+<div class="imgjuegos">
+  <img src="paper.jpg" width="217.81" height="290.41" > 
+  <div class="papert"></div> 
+  <img src="covert.jpg" width="217.81" height="290.41">
+  <div class="papert"></div> 
+  <img src="dark.jpg" width="217.81" height="290.41" >
+  <div class="papert">  </div>
+  <img src="thr.jpg" width="217.81" height="290.41" >
+</div>
+
+<br> <br> <br> <br>
+
+<div class="imjuegos">
+  <img src="vig.jpg" width="217.81" height="290.41" > 
+  <div class="papert"></div> 
+  <img src="sha.jpg" width="217.81" height="290.41">
+  <div class="papert"></div> 
+  <img src="ecli.jpg" width="217.81" height="290.41" >
+  <div class="papert"></div> 
+  <img src="spa.jpg" width="217.81" height="290.41" >
+</div>
+<br> <br> <br> <br>
+<div class="imjuegos">
+  <img src="got.jpg" width="217.81" height="290.41" > 
+  <div class="papert"></div> 
+  <img src="sacra.jpg" width="217.81" height="290.41">
+  <div class="papert"></div> 
+  <img src="tori.jpg" width="217.81" height="290.41" >
+  <div class="papert"></div> 
+  <img src="shu.jpg" width="217.81" height="290.41" >
+</div>
+
+<button class="mas"> Mostrar más </button> 
+
+
+
+  
+<style>
+.papert{
+  color: #363636;
+    line-height: 1rem;
+    margin: .4rem 0 .25rem;
+    font-family: "SSTPro-Bold","arial",sans-serif;
+  text-align: justify;
+  border: 18px solid white;
+  
+}
+.imgjuegos{
+  
+  display: inline;
+  display: flex;
+  
+}
+
+.imjuegos{
+  display: inline;
+  display: flex;
+
+}
+
+.mas{
+  background:white;
+	color:#0070cc;
+	display: inline-block;
+	font-size: 20px;
+	margin: 50px 400px;
+	padding: 10px 0px;
+	text-align: center;
+	width: 200px;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0);
+  align-content: center;
+
+}
+
+</style>
+
+
 </body>
 </html>

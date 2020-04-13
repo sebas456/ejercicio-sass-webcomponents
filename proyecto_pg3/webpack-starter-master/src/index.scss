@@ -1,0 +1,32 @@
+.cabecera{
+    background-color: white;
+    display: block 100%;
+}
+
+#padre{
+    padding-right: 20px;
+    text-align: left;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    line-height: 21px;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    color: #1F1F1F;
+    font-family: "SST W20 Medium", helvetica, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    
+}
+
+#sesion{
+    
+    color: #0172ce;
+    flex-shrink: 0;
+    font-size: 0.9375rem;
+    height: 100%;
+    text-transform: capitalize;
+}
